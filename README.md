@@ -1,4 +1,4 @@
-# 🕉️ ## 📱 Application Screenshot
+# 🕉️ Application Screenshot
 
 ![GeetaGPT Interface](public/screenshot.png)
 *Experience spiritual conversations with Lord Krishna through our beautiful, modern interface featuring multi-conversation support, Sanskrit verses, and real-time chat.*
@@ -6,13 +6,7 @@
 > **Śrī Kṛṣṇa, bearer of the Gītā's eternal light** - An AI-powered spiritual companion sharing the timeless wisdom of the Bhagavad Gita through conversational AI.
 
 
-
-## � Application Screenshot
-
-![GeetaGPT Interface](public/screenshot.png)
-*Experience spiritual conversations with Lord Krishna through our beautiful, modern interface featuring multi-conversation support, Sanskrit verses, and real-time chat.*
-
-## �📖 Overview
+## 📱Overview
 
 GeetaGPT is a sophisticated chatbot application that embodies the persona of Lord Krishna, offering spiritual guidance and wisdom from the Bhagavad Gita. Built with modern web technologies, it provides an immersive conversational experience with advanced session management and beautiful UI.
 
