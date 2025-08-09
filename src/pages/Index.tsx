@@ -3,12 +3,13 @@ import { ChatHeader } from "@/components/ChatHeader";
 import { ChatMessage } from "@/components/ChatMessage";
 import { ChatInput } from "@/components/ChatInput";
 import { LoadingMessage } from "@/components/LoadingMessage";
-import { useChat } from "@/hooks/useChat";
+import { useChatContext } from "@/hooks/useChatContext";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import Conversation from "@/components/Conversation";
+import ConversationSidebar from "@/components/ConversationSidebar";
 
 const Index = () => {
-  const { messages, isLoading, sendMessage } = useChat();
+  const { messages, isLoading, sendMessage, activeConversationId } =
+    useChatContext();
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   // Auto-scroll to bottom when new messages arrive
@@ -19,8 +20,8 @@ const Index = () => {
   }, [messages, isLoading]);
 
   return (
-    <div className="flex bg-gradient-background h-screen ">
-      <Conversation />
+    <div className="flex h-screen bg-gradient-background">
+      <ConversationSidebar />
 
       <div className="w-full flex flex-col bg-gradient-background">
         <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full h-full">

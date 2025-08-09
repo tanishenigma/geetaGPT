@@ -3,7 +3,6 @@ import { Search, Plus, NotebookPen, PenBox } from "lucide-react";
 
 const Conversation = () => {
   const [addMode, setAddMode] = useState(false);
-
   return (
     <div className="flex flex-col h-full w-100 bg-card/50 backdrop-blur-sm border-r border-border/50">
       <div className="mt-5 px-4">
@@ -17,12 +16,12 @@ const Conversation = () => {
         </div>
         <div className="inline-flex items-center gap-2 px-4 mt-5 mb-5 cursor-pointer hover:bg-background rounded-lg p-2 pr-20 transition-colors">
           <PenBox />
-          <button>New Chat</button> 
+          <button onClick={handleNewChat}>New Chat</button>
         </div>
       </div>
       <div className="flex items-center justify-between px-4 py-0 border-t border-border/30">
         <span className="inline-flex items-center gap-2 mt-3 text-muted-foreground cursor-pointer">
-          Chats
+          My Conversations
         </span>
       </div>
       <div className="flex-1 overflow-y-auto hide-scrollbar px-4">

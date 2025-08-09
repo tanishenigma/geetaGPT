@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 /* Modern chatbot design system with beautiful gradients and animations */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 @layer base {
   :root {
     --background: 45 15% 8%;
