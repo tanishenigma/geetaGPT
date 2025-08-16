@@ -4,21 +4,13 @@ import path from "path";
 
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "0.0.0.0", // accessible on local network
-    port: 8080,
+    host: "0.0.0.0",
+    port: 5173,
   },
-  plugins: [
-    react(),
-    // Example: only add extra plugins in development
-    ...(mode === "development"
-      ? [
-          // put dev-only plugins here
-        ]
-      : []),
-  ],
+  plugins: [react(), ...(mode === "development" ? [] : [])],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"), // alias for imports
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 }));
